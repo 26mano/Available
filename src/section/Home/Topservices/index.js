@@ -20,7 +20,7 @@ const index = () => {
             id : 0,
             link : "/project_box",
             animateIn : "animate__fadeInUp",
-            delay : "500ms"
+            delay : 0.3
         },
         {
             title: "Classy Construction",
@@ -29,7 +29,7 @@ const index = () => {
             id : 1,
             link : "/classyconstruction",
             animateIn : "animate__fadeInUp",
-            delay : "800ms"
+            delay : 0.7
         },
         {
             title: "H&D Horizon",
@@ -38,7 +38,7 @@ const index = () => {
             id : 2,
             link : "/D&D_Horizons",
             animateIn : "animate__fadeInUp",
-            delay : "1s"
+            delay : 1.2
         },
         
       
@@ -72,7 +72,7 @@ const index = () => {
                      <Typography gutterBottom color="warning.light" alignItems="center" justifyContent="center" >
                {card.title}
              </Typography>
-             <AnimationOnScroll animateIn={card.animateIn} style={{animationDelay:{"500ms" : "0ms" } }} >
+             <AnimationOnScroll animateIn={card.animateIn} duration={card.delay} >
                        <Box sx={{ border:"2px solid goldenrod", padding:"5px",  boxShadow :"2px 2px 10px rgba(241, 241, 155, 0.705)" , borderRadius:"10px"  }} >
                        
                   <Card   sx={{  height:"50%"}}>

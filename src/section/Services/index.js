@@ -8,6 +8,7 @@ import Footer from "../Footer";
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import { Box } from '@mui/system';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import Helmet from 'react-helmet';
 
 const index = () => {
     const content = [
@@ -17,28 +18,32 @@ const index = () => {
             description: "hgjhgkjgk;gh;igjhgvs",
             image :"https://it.sheridancollege.ca/images/project-puzzle-pieces.jpg",
             id : 0,
-            link : "/Project_box"
+            link : "/ProjectBox",
+            delay:0.2
         },
         {
             title: "Creative Design",
             description: "hgjhgkjgk;gh;igjhgvs",
             image :"https://thumbs.dreamstime.com/b/innovative-architecture-civil-engineering-plan-building-construction-project-creative-graphic-design-showing-concept-174256642.jpg",
             id : 1,
-            link : "/CreativeDesign"
+            link : "/CreativeDesign",
+            delay:0.4
         },
         {
             title: "D&D Horizon",
             description: "hgjhgkjgk;gh;igjhgvs",
             image:"https://www.galaxyeduworld.com/storage/blogs/1602683459_5f870243cc6a9_750_351.jpg",
             id : 2,
-            link : "/D&D_Horizons"
+            link : "/D&D",
+            delay:0.6
         },
         {
             title: "Editing",
             description: "hgjhgkjgk;gh;igjhgvs",
             image :"https://cdn.flatworldsolutions.com/featured-images/top-10-online-video-editing-tools.jpg",
             id : 3,
-            link : "/UV_Editing"
+            link : "/Uv_Visual_Studio",
+            delay:0.8
         },
     
         {
@@ -46,7 +51,8 @@ const index = () => {
             description: "hgjhgkjgk;gh;igjhgvs",
             image:"https://learn.podium.school/wp-content/uploads/2021/10/jumping-dancers-scaled-1.jpg",
             id : 4,
-            link : "/The_Dance_Entity"
+            link : "/The_Dance_Entity",
+            delay:1
         },
     
         {
@@ -54,21 +60,24 @@ const index = () => {
             description: "hgjhgkjgk;gh;igjhgvs",
             image: "https://media-cldnry.s-nbcnews.com/image/upload/t_focal-758x379,f_auto,q_auto:best/rockcms/2022-03/plant-based-food-mc-220323-02-273c7b.jpg",
             id : 5,
-            link : "/insuvai"
+            link : "/Catering",
+            delay:1.2
         },
         {
             title: "Magic Menporul Software Solution",
             description: "hgjhgkjgk;gh;igjhgvs",
             image: "https://websultanate.com/wp-content/uploads/2018/03/web-Application.jpg",
             id : 6,
-            link : "/Magicmenporul_softwaresolutions"
+            link : "/MagicMenporul",
+            delay:1.4
         },
         {
             title: "Pc Build Advisor",
             description: "hgjhgkjgk;gh;igjhgvs",
             image: "https://www.gamingscan.com/wp-content/uploads/2020/07/Best-Custom-PC-Builders.jpg",
             id : 7,
-            link : "/Pc-build"
+            link : "/Pc_Build",
+            delay:1.6
         },
         // {
         //     title: "Add Services",
@@ -83,6 +92,10 @@ const index = () => {
         <div >
             {/* ---------------------------------for Desktop---------------------------------------------- */}
         <div>
+        <Helmet >
+                <title> Available | Our Services </title>
+                <meta name='description' content='Available' />
+            </Helmet>
         <Stack component="animate" sx={{ width:"100%", height:"100%",backgroundColor:"grey.900", justifyContent:"center", display:{xs:"none", md:"grid", backgroundImage:"url('http://pinnacleeyecenter.com/wp-content/uploads/2015/12/make-an-appointment.jpg')"}}}  >
              <Box  sx={{ display:"flex",justifyContent:"flex-end" , pt:10, pb:-20 }}>
                 <Link to="/" style={{ position:"relative",textDecoration:"none",}} >
@@ -110,8 +123,9 @@ const index = () => {
        
                  <Grid item md={3}  pr="10px" >
                  <Link display="grid" to={card.link} style={{ textDecoration:"none" }} >
-                     
-                 <Card className='scale-up-center'    sx={{  width:"100%", height:"100%", boxShadow :"1px 1px 3px gray" , justifyContent:"stretch" , }}>
+                     <AnimationOnScroll animateIn='animate__zoomIn' duration={card.delay}
+             >
+                 <Card    sx={{  width:"100%", height:"100%", boxShadow :"1px 1px 3px gray" , justifyContent:"stretch" , }}>
              
                 <CardMedia 
                     color='grey.300'
@@ -134,7 +148,7 @@ const index = () => {
         
         
       </Card>
-      
+      </AnimationOnScroll>
       </Link>
     </Grid>
     ) ) } 
@@ -174,7 +188,7 @@ const index = () => {
        
                  <Grid item xs={6}  pr="5px" >
                  <Link display="grid" to={card.link} style={{ textDecoration:"none" }} >
-                 <AnimationOnScroll animateIn='animate__zoomIn' >
+                 <AnimationOnScroll animateIn='animate__zoomIn' duration={card.delay} >
                  <Card  sx={{  width:"100%", height:"100%", boxShadow :"1px 1px 3px gray" , justifyContent:"stretch" }}>
     
                 <CardMedia 

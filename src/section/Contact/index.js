@@ -19,6 +19,10 @@ import Helmet from 'react-helmet';
 const Contact = () => {
     return (
         <div>
+          <Helmet >
+                <title> Available | Contact Us </title>
+                <meta name='description' content='Available' />
+            </Helmet>
             {/* ----------------------------------for desktop-------------------------------------------------------- */}
    <Stack sx={{display:{ xs:"none", md:"flex" ,lg:"flex" } ,width:"100%", height:"100vh" , backgroundImage:"url('https://cutewallpaper.org/21/contact-us-background-image/Contact-Us-Background-Chief-Sales-Leader.jpg')" }} >
           {/* <Helmet>
@@ -131,13 +135,8 @@ const Contact = () => {
         </Stack>
         {/* --------------------------------------for Mobile------------------------------------------------------------ */}
         <Stack sx={{display:{ xs:"flex", md:"none" ,lg:"none" } ,width:"100vw", height:"100vh" , backgroundImage:"url('https://cutewallpaper.org/21/contact-us-background-image/Contact-Us-Background-Chief-Sales-Leader.jpg')" }} >
-          <Helmet>
-            <title> Contacts | Available </title>
-            <meta name='description' content='Anytime, Anywhere, Anyservice, Anywork Contact US' />
-          </Helmet>
-
-   <Container >
-
+        
+         <Container >
           <Box  sx={{ display:"flex",justifyContent:"flex-end" , pt:10 ,mb:-14 }}>
                 <Link to="/" style={{ position:"relative",textDecoration:"none",}} >
                 <LogoutOutlinedIcon  fontSize='medium' color='warning' />
@@ -149,9 +148,8 @@ const Contact = () => {
                 Contact Us
             </Typography>
               </Stack>
-        
 
-            <Divider orientation='horizontal' sx={{ bgcolor:"white", width:"100%", justifySelf:"center", mt:2 }} />
+       <Divider orientation='horizontal' sx={{ bgcolor:"white", width:"100%", justifySelf:"center", mt:2 }} />
             
               <Grid container  item xs={12}  >
                 <Grid container  spacing={4} sx={{position:"static"}} mt={5} >

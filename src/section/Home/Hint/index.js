@@ -3,9 +3,11 @@ import { Box } from '@mui/system';
 import React from 'react';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
+
 const index = () => {
     return (
         <div  >
+          
              <div  style={{ width:"100%", height:"100%", borderRadius:"0% 0% 0% 20% "}} >
         <Grid  >
 {/* --------------------------------For Mobile--------------------------------------------------- */}

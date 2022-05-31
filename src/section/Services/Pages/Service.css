@@ -1,0 +1,139 @@
+
+body {
+  background-color: rgb(25, 46, 32);
+  margin: 0% !important;
+  padding: 0%;
+  color: azure;
+}
+
+.Service {
+  position: relative;
+}
+
+.Container {
+  /* width: 100%; */
+  height: 500px auto;
+  opacity: 90%;
+  margin-top: -10%;
+  border-radius: 25px;
+  /* box-shadow: 2px 6px 6px #ccc; */
+  background-color: rgba(255, 255, 240, 0);
+  /* background-color: rgba(241, 241, 155, 0.705); */
+}
+
+.head {
+  /* background-color: rgb(114, 17, 204); */
+  background: linear-gradient(
+    180deg,
+    rgb(114, 17, 204) 6.77%,
+    rgb(17, 4, 90) 80%
+  );
+  width: 100vw;
+  height: 100%;
+  color: azure;
+}
+.project-head {
+  /* background-color: rgb(17, 192, 204); */
+  background: linear-gradient(
+    180deg,
+    rgb(17, 192, 204) 6.77%,
+    rgb(10, 230, 145) 80%,
+    rgb(5, 143, 113) 100%
+  );
+  width: 100vw;
+  height: 100%;
+  color: azure;
+}
+.dance-head {
+  /* background-color: rgb(226, 52, 21); */
+  background: linear-gradient(
+    180deg,
+    rgb(226, 52, 21) 6.77%,
+    rgb(219, 133, 5) 80%
+  );
+  width: 100vw;
+  height: 100%;
+  color: azure;
+}
+.horizon-head {
+  /* background-color: rgb(128, 95, 7); */
+  background: linear-gradient(
+    180deg,
+    rgb(128, 95, 7) 7.77%,
+    rgb(92, 44, 5) 80%
+  );
+  width: 100vw;
+  height: 100%;
+  color: azure;
+}
+.editing-head {
+  /* background-color: rgb(75, 42, 20); */
+  background: linear-gradient(
+    180deg,
+    rgb(175, 74, 7) 7.77%,
+    rgb(75, 42, 20) 90%
+  );
+  width: 100vw;
+  height: 100%;
+  color: azure;
+}
+.software-head {
+  /* background-color: rgb(13, 196, 141); */
+  /* background-color: rgb(6, 70, 51); */
+  width: 100vw;
+  height: 100%;
+  color: azure;
+/* Rectangle 1 */
+  background: linear-gradient(
+    180deg,
+    rgb(13, 196, 141) 6.77%,
+    rgb(6, 70, 51) 90%
+  );
+}
+.insuvai-head {
+  /* background-color: rgb(13, 196, 141); */
+  /* background-color: rgb(6, 70, 51); */
+  width: 100vw;
+  height: 100%;
+  color: azure;
+/* Rectangle 1 */
+  background: linear-gradient(
+    180deg,
+    rgb(95, 8, 34) 6.77%,
+    rgb(59, 6, 70) 90%
+  );
+}
+
+.left-head {
+  padding-left: 20%;
+  padding-top: 30%;
+}
+
+.right-head {
+  padding-top: 18%;
+  padding-left: 20%;
+}
+
+.btn {
+  color: azure;
+  margin-left: 40%;
+}
+
+.container {
+  width: 100%;
+  border-radius: 20px;
+  background-color: azure;
+}
+
+.container2 {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 10%;
+}
+
+.order-btn {
+  display: flex;
+  align-content: flex-end;
+  align-items: baseline;
+  justify-content: stretch;
+}

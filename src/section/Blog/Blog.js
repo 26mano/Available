@@ -14,7 +14,7 @@ function Blog(props) {
      <Stack style={{ width:"100%",height:"100%",display:{xs:"none", md:"flex"} , backgroundImage:"url('https://wallpaperaccess.com/full/1526048.jpg')"}} >
           
             <Helmet >
-                <title> About Us | Available</title>
+                <title> Available | About Us </title>
                 <meta name='description' content='Available' />
             </Helmet>
 
@@ -65,11 +65,10 @@ function Blog(props) {
         {/* -----------------------------------for Mobile-------------------------------------------------------------- */}
      <Stack style={{ width:"100%", height:"100%",display:{ xs:"flex", md:"none" } , backgroundImage:"url('https://wallpaperaccess.com/full/1526048.jpg')"}} >
             
-            <Helmet >
-                <title> About Us | Available</title>
+     <Helmet >
+                <title> Available | About Us </title>
                 <meta name='description' content='Available' />
             </Helmet>
-          
             <Box  sx={{ display:{ xs:"flex", md:"none"} ,justifyContent:"flex-end" ,  pt:2 , pr:2}}>
                 <Link to="/" style={{ position:"relative", textDecoration:"none",flexGrow:0}} >
                 <LogoutOutlinedIcon  fontSize='medium' color='warning' />

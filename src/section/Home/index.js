@@ -9,6 +9,7 @@ import TopServices from "./Topservices";
 import Footer from "../Footer"
 import { Link } from 'react-router-dom';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import Helmet from 'react-helmet';
 
 
 const Home = () => {
@@ -16,13 +17,18 @@ const Home = () => {
     return (
       < >
 <div style={{ width:"100%",height:"100%" , position:"relative" }} >
+
+  <Helmet >
+                <title>Available Services | Home </title>
+                <meta name='description' content='Your Demand Has Been Completed by our Profesional Services' />
+   </Helmet>
+
        {/* ---------------------------------Hero Home------------------------------------------------------------------------------------------ */}
-        <div 
-        color='error.main' style={{ position:"static",width:"100%", height:"100vh",  borderRadius:"0% 0% 0% 0% "  }} >
+        <div  style={{ position:"static",width:"100%", height:"100vh",  borderRadius:"0% 0% 0% 0% "  }} >
            
            <div>
            <NavBar />
-           <div style={{ backgroundImage:"url('https://www.chiefsalesleader.com/wp-content/uploads/2018/03/Text-Book-Background.png')", clipPath: "ellipse(60% 87% at 45.12% 0%)" }} >
+           <div style={{ width:"100%",backgroundImage:"url('https://www.chiefsalesleader.com/wp-content/uploads/2018/03/Text-Book-Background.png')", clipPath: "ellipse(60% 87% at 45.12% 0%)" }} >
            
             <Grid container  >
                 <Grid item xs={3}>
