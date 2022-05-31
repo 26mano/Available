@@ -68,7 +68,7 @@ const index = () => {
                  { content.map((card) => (  
                      
                  <Grid item xs={4}  pr="10px" mt="20px" >
-                     <Link display="grid" to={card.link} >
+                     <Link display="grid" to={card.link} style={{ textDecoration:"none" }} >
                      <Typography gutterBottom color="warning.light" alignItems="center" justifyContent="center" >
                {card.title}
              </Typography>

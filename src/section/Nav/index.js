@@ -10,7 +10,6 @@ const pages = [
   'Services' , 
   'Blog', 
   'Contact',
-  'Log-Out' 
 ];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 

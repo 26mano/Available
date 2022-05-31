@@ -173,7 +173,7 @@ const index = () => {
        
                  <Grid item xs={6}  pr="5px" >
                  <Link display="grid" to={card.link} style={{ textDecoration:"none" }} >
-                 <Card className='swing-top-fwd'  sx={{  width:"100%", height:"100%", boxShadow :"1px 1px 3px gray" , justifyContent:"stretch" }}>
+                 <Card  sx={{  width:"100%", height:"100%", boxShadow :"1px 1px 3px gray" , justifyContent:"stretch" }}>
     
                 <CardMedia 
                     color='grey.300'
