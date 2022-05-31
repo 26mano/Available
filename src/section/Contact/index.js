@@ -12,6 +12,7 @@ import LanguageIcon from '@mui/icons-material/Language';
 import { Link } from 'react-router-dom';
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import Footer from "../Footer";
+// import { AnimationOnScroll } from 'react-animation-on-scroll';
 // import Helmet from 'react-helmet';
 
 const Contact = () => {
@@ -41,7 +42,6 @@ const Contact = () => {
             <Grid container  marginTop={10} >
               <Grid container  item xs={5}  >
                 <Grid container  spacing={4} sx={{position:"static"}} >
-            
                 <Grid item lg={6} >
                 <Box sx={ {   bgcolor:"grey.800", borderRadius:"5%"  ,width:"100%", height:"100px" , display:"grid", padding:"10px"}}  >
                   <Icon  >
@@ -57,7 +57,7 @@ const Contact = () => {
                </Box>
 
                 </Grid>
-
+                
                 <Grid item lg={6} >
                 <Box  sx={ {  bgcolor:"grey.800", borderRadius:"5%"  ,width:"100%", height:"100px" , display:"grid", padding:"10px" }} >
                   <Icon  >
@@ -85,6 +85,8 @@ const Contact = () => {
                  </Typography>
                </Box>
                 </Grid>
+
+
                 <Grid item lg={12}  >
                 <Box  sx={ {  bgcolor:"grey.800", borderRadius:"5%"  ,width:"100%", height:"100px" , display:"grid" , padding:"10px" }}  >
                 <Icon  >
@@ -151,7 +153,7 @@ const Contact = () => {
             
               <Grid container  item xs={12}  >
                 <Grid container  spacing={4} sx={{position:"static"}} mt={5} >
-            
+         
                 <Grid item xs={6} >
                 <Box sx={ {   bgcolor:"grey.800", borderRadius:"5%"  ,width:"100%", height:"100px" , display:"grid", padding:"10px"}}  >
                   <Icon  >
@@ -167,7 +169,8 @@ const Contact = () => {
                </Box>
 
                 </Grid>
-
+         
+ 
                 <Grid item xs={6} >
                 <Box  sx={ {  bgcolor:"grey.800", borderRadius:"5%"  ,width:"100%", height:"100px" , display:"grid", padding:"10px" }} >
                   <Icon  >
@@ -181,7 +184,8 @@ const Contact = () => {
                  </Typography>
                </Box>
                 </Grid>
-
+    
+      
                 <Grid item xs={12}  >
                 <Box  sx={ {  bgcolor:"grey.800", borderRadius:"5%"  ,width:"100%", height:"100px" , display:"grid" , padding:"10px" }}  >
                 <Icon  >
@@ -195,6 +199,8 @@ const Contact = () => {
                  </Typography>
                </Box>
                 </Grid>
+       
+        
                 <Grid item lg={12}  >
                 <Box  sx={ {  bgcolor:"grey.800", borderRadius:"5%"  ,width:"100%", height:"100px" , display:"grid" , padding:"10px" }}  >
                 <Icon  >
@@ -208,8 +214,7 @@ const Contact = () => {
                  </Typography>
                </Box>
                 </Grid>
-              
-              
+         
              
              
               </Grid>
@@ -221,7 +226,10 @@ const Contact = () => {
 
       
         </Stack>
+        <div style={{ position:"static" }} >
         <Footer />
+        </div>
+  
         </div>
      
     );

@@ -3,41 +3,161 @@ body{
   padding: 0%;
 }
 
-.App {
-  text-align: center;
+.color-change-5x {
+	-webkit-animation: color-change-5x 8s linear infinite alternate both;
+	        animation: color-change-5x 8s linear infinite alternate both;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.swing-top-fwd {
+	-webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* ----------------------------------------- */
+@-webkit-keyframes scale-up-center {
+        0% {
+          -webkit-transform: scale(0.5);
+                  transform: scale(0.5);
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+      }
+      @keyframes scale-up-center {
+        0% {
+          -webkit-transform: scale(0.5);
+                  transform: scale(0.5);
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+      }
+/* ------------------------ */
+
+@-webkit-keyframes color-change-5x {
+        0% {
+          background: #19dcea;
+        }
+        25% {
+          background: #b22cff;
+        }
+        50% {
+          background: #ea2222;
+        }
+        75% {
+          background: #f5be10;
+        }
+        100% {
+          background: #3bd80d;
+        }
+      }
+      @keyframes color-change-5x {
+        0% {
+          background: #19dcea;
+        }
+        25% {
+          background: #b22cff;
+        }
+        50% {
+          background: #ea2222;
+        }
+        75% {
+          background: #f5be10;
+        }
+        100% {
+          background: #3bd80d;
+        }
+      }
+      
+
+      /* ----------------------------- */
+
+      @-webkit-keyframes bg-pan-right {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
+      }
+      @keyframes bg-pan-right {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
+      }
+      
+      
+/* ----------------------------------------------- */
+@-webkit-keyframes slide-top {
+        0% {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+        }
+        100% {
+          -webkit-transform: translateY(-100px);
+                  transform: translateY(-100px);
+        }
+      }
+      @keyframes slide-top {
+        0% {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+        }
+        100% {
+          -webkit-transform: translateY(-100px);
+                  transform: translateY(-100px);
+        }
+      }
+      
+.swing-top-fwd:hover {
+  animation:  '${swing-top-fed} 0.6s both';
+}
+
+/* ------------------------------------------------------ */
+
+@-webkit-keyframes swing-top-fwd {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  100% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes swing-top-fwd {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
   }
 }

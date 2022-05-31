@@ -12,10 +12,11 @@ import { Link } from 'react-router-dom';
 const index = () => {
     return (
         <div>
-         <div style={{ position:"relative" }}>
+         <div style={{ position:"static" }}>
+             
            <Box  width="100%" height="100%" sx={{ justifyContent:"center", display:{xs:"none", md:"grid"}, bgcolor:"grey.700", padding:"20px"}} >
                <Container  maxWidth="md"  sx={{ position:"relative"}} >
-                <Link to="/"  style={{ paddingLeft:"50px",paddingRight:"50px",  textDecoration:"none"}} >
+                <Link to="https://www.facebook.com/available2k22"  style={{ paddingLeft:"50px",paddingRight:"50px",  textDecoration:"none"}} >
                 <FacebookOutlinedIcon color='warning' />
                 </Link>
                 <Link to="/" style={{ paddingRight:"50px", textDecoration:"none"  }} >

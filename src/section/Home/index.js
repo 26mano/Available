@@ -8,6 +8,7 @@ import TopServices from "./Topservices";
 // import { Link } from 'react-router-dom';
 import Footer from "../Footer"
 import { Link } from 'react-router-dom';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 
 const Home = () => {
@@ -30,6 +31,8 @@ const Home = () => {
                 <Grid item xs={6} sx={{ width:"100%" }} >
                  <Box sx={{height:"100vh", display:{xs:"none" , md:"flex", lg:"flex"}, alignItems:"center", justifyContent:"center", textAlign:"center" }} >
                     <Box>
+                    <AnimationOnScroll animateIn="animate__flipInX">
+                      {/* animate__flipInX */}
                      <Typography 
                      variant='h1' 
                     //  gutterBottom
@@ -43,6 +46,9 @@ const Home = () => {
                            }}>
                        AVAILABLE
                      </Typography>
+                    </AnimationOnScroll>
+
+           <AnimationOnScroll animateIn="animate__fadeIn">
                      <Typography 
                      variant='h6' 
                      gutterBottom
@@ -56,6 +62,7 @@ const Home = () => {
                            }}>
                        Your Demand Has Been Completed by our Profesional Services
                      </Typography>
+                     </AnimationOnScroll>
                      <Box sx={{ display:{xs:"none" , md:"flex"}, justifyContent:"center", textAlign:"center" }}  >
                        <Link to="/Services" style={{ textDecoration:"none", width:"100%" }}>
                        <Button 
@@ -140,7 +147,7 @@ const Home = () => {
         {/* -------------------------------Discription------------------------------------------------------------------------------------ */}
 
        <Hint />
-      
+
  {/* --------------------------------OUR TOP SERVICES----------------------------------------------------------------------------------- */}
         <TopServices />
 {/* ----------------------------------------------------------------------------------------------------------------------------- */}

@@ -1,6 +1,8 @@
 import {  Card, CardContent, CardMedia, Container,  Divider,  Grid, Stack, Typography } from '@mui/material';
 // import { Box } from '@mui/system';
 import React from 'react';
+// import Zoom from '@mui/material/Zoom'
+import "../../App.css";
 import { Link } from 'react-router-dom';
 import Footer from "../Footer";
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
@@ -89,6 +91,7 @@ const index = () => {
              </Box>
           
              <div style={{ width:"100%"  }}  >
+                 
                  <Typography variant='h3' ml={-2}  mt={-5} color="warning.main" fontFamily= 'Josefin Sans' >
                      Our Services 
                  </Typography>
@@ -100,14 +103,15 @@ const index = () => {
             <Container maxWidth="lg" >
             {/* <Divider variant="inset" orientation="horizontal" color ="gold"  width ="150px" sx={{ alignItems:"center" , marginLeft:"43%" }} /> */}
 
-            <Grid container spacing={4} pt={15} pb={10} >
+            <Grid  container spacing={4} pt={15} pb={10} >
 
                  { content.map((card) => (  
        
                  <Grid item md={3}  pr="10px" >
                  <Link display="grid" to={card.link} style={{ textDecoration:"none" }} >
-                 <Card  sx={{  width:"100%", height:"100%", boxShadow :"1px 1px 3px gray" , justifyContent:"stretch" }}>
-    
+                     
+                 <Card className='scale-up-center'    sx={{  width:"100%", height:"100%", boxShadow :"1px 1px 3px gray" , justifyContent:"stretch" , }}>
+             
                 <CardMedia 
                     color='grey.300'
                      component="img"
@@ -129,6 +133,7 @@ const index = () => {
         
         
       </Card>
+      
       </Link>
     </Grid>
     ) ) } 
@@ -168,7 +173,7 @@ const index = () => {
        
                  <Grid item xs={6}  pr="5px" >
                  <Link display="grid" to={card.link} style={{ textDecoration:"none" }} >
-                 <Card  sx={{  width:"100%", height:"100%", boxShadow :"1px 1px 3px gray" , justifyContent:"stretch" }}>
+                 <Card className='swing-top-fwd'  sx={{  width:"100%", height:"100%", boxShadow :"1px 1px 3px gray" , justifyContent:"stretch" }}>
     
                 <CardMedia 
                     color='grey.300'
@@ -198,7 +203,7 @@ const index = () => {
      </Grid>
     </Container>
     </Stack>
-           
+  
         <Footer />
 
 </div>
@@ -207,3 +212,7 @@ const index = () => {
 };
 
 export default index;
+
+
+
+
