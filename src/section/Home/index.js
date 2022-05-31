@@ -94,7 +94,9 @@ const Home = () => {
             </Grid>
             </div>
             <Box sx={{ height:"100vh",backgroundImage:"url('https://www.chiefsalesleader.com/wp-content/uploads/2018/03/Text-Book-Background.png')", display:{xs:"flex" , md:"none"}, alignItems:"center", justifyContent:"center", textAlign:"center" }} >
-                    <div> <Typography 
+                    <div>
+                    <AnimationOnScroll animateIn="animate__flipInX">
+                       <Typography 
                      variant='h3'
                      sx={{
                          alignSelf:"center",
@@ -107,6 +109,8 @@ const Home = () => {
                            }}>
                        AVAILABLE
                      </Typography>
+                     </AnimationOnScroll>
+                     <AnimationOnScroll animateIn="animate__fadeInDown" delay="500ms" >
                      <Typography 
                      variant='body2' 
                      gutterBottom
@@ -120,6 +124,8 @@ const Home = () => {
                            }}>
                        Your Demand Has Been Completed by our Profesional Services
                      </Typography>
+                     </AnimationOnScroll>
+                     <AnimationOnScroll animateIn='animate__fadeIn'>
                      <Box sx={{ display:{xs:"flex" , md:"none"}, justifyContent:"center", textAlign:"center" }}  >
                      <Button 
                      variant='contained'
@@ -137,6 +143,7 @@ const Home = () => {
                      </Button>
 
                      </Box>
+                     </AnimationOnScroll>
               </div>
         </Box>
                  

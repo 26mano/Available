@@ -12,6 +12,7 @@ import LanguageIcon from '@mui/icons-material/Language';
 import { Link } from 'react-router-dom';
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import Footer from "../Footer";
+import Helmet from 'react-helmet';
 // import { AnimationOnScroll } from 'react-animation-on-scroll';
 // import Helmet from 'react-helmet';
 
@@ -130,10 +131,11 @@ const Contact = () => {
         </Stack>
         {/* --------------------------------------for Mobile------------------------------------------------------------ */}
         <Stack sx={{display:{ xs:"flex", md:"none" ,lg:"none" } ,width:"100vw", height:"100vh" , backgroundImage:"url('https://cutewallpaper.org/21/contact-us-background-image/Contact-Us-Background-Chief-Sales-Leader.jpg')" }} >
-          {/* <Helmet>
+          <Helmet>
             <title> Contacts | Available </title>
             <meta name='description' content='Anytime, Anywhere, Anyservice, Anywork Contact US' />
-          </Helmet> */}
+          </Helmet>
+
    <Container >
 
           <Box  sx={{ display:"flex",justifyContent:"flex-end" , pt:10 ,mb:-14 }}>
@@ -223,13 +225,11 @@ const Contact = () => {
             
             
           </Container>
-
+   
       
         </Stack>
-        <div style={{ position:"static" }} >
+      
         <Footer />
-        </div>
-  
         </div>
      
     );

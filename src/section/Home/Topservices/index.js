@@ -109,19 +109,20 @@ const index = () => {
          
          <Box sx={{ width:"100%",height:"100%",marginTop:"0%",backgroundColor:"grey.900", justifyContent:"center", display:{xs:"-ms-grid", md:"none"}}} >
        <Container sx={{ justifyContent:"center", textAlign:"center",pt:"100px" }} >
+         <AnimationOnScroll animateIn='animate__fadeInUp'>
        <Typography variant='h5' color="grey.500"  >
               Top Services
             </Typography>
+            </AnimationOnScroll>
             <Divider sx={{ width:"9rem" ,ml:11.5, border:"1px solid goldenrod"}} />
        </Container>
       
 <Container maxWidth="xs" >
+  <AnimationOnScroll animateIn='animate__fadeIn'>
 <Box sx={{ maxWidth: 350, flexGrow: 0, justifyContent:"center", pb:10 }}>
     
       <AutoPlaySwipeableViews
-        // axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-        // index={activeStep}
-        // onChangeIndex={handleStepChange}
+
         enableMouseEvents
       >
         {content.map((step, index) => (
@@ -162,7 +163,7 @@ const index = () => {
       </AutoPlaySwipeableViews>
      
     </Box>
-          
+    </AnimationOnScroll>
          
 </Container>
  

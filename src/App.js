@@ -1,16 +1,13 @@
 //packages
 import React from 'react';
 import { Route, Routes } from 'react-router';
-import Contact from './section/Contact';
-// import { Route, Routes } from 'react-router-dom';
-// import ThemeProvider from './theme/index';
+import Blog from './section/Blog/Blog';
 
-//webpages
+
+// pages
 import Home from './section/Home';
 import Services from './section/Services';
-
-
-
+import Contact from './section/Contact';
 
 function App() {
   return (
@@ -22,8 +19,9 @@ function App() {
       <Route path="/Services" element={<Services />} /> 
       <Route path="/Contact" element={<Contact />} /> 
       <Route path="/Log-Out" element={<Home />} /> 
-        {/* <Home /> */}
-        {/* <Services /> */}
+      <Route path="/Blog" element={<Blog />} /> 
+      {/* <Route path="/CreativeDesign" element={ <Home /> } />  */}
+  
       
      </Routes>
       

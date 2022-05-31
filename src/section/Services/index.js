@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import Footer from "../Footer";
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import { Box } from '@mui/system';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const index = () => {
     const content = [
@@ -23,7 +24,7 @@ const index = () => {
             description: "hgjhgkjgk;gh;igjhgvs",
             image :"https://thumbs.dreamstime.com/b/innovative-architecture-civil-engineering-plan-building-construction-project-creative-graphic-design-showing-concept-174256642.jpg",
             id : 1,
-            link : "/Creative_Design"
+            link : "/CreativeDesign"
         },
         {
             title: "D&D Horizon",
@@ -81,8 +82,8 @@ const index = () => {
     return (
         <div >
             {/* ---------------------------------for Desktop---------------------------------------------- */}
-<div>
-<Stack component="animate" sx={{ width:"100%", height:"100%",backgroundColor:"grey.900", justifyContent:"center", display:{xs:"none", md:"grid", backgroundImage:"url('http://pinnacleeyecenter.com/wp-content/uploads/2015/12/make-an-appointment.jpg')"}}}  >
+        <div>
+        <Stack component="animate" sx={{ width:"100%", height:"100%",backgroundColor:"grey.900", justifyContent:"center", display:{xs:"none", md:"grid", backgroundImage:"url('http://pinnacleeyecenter.com/wp-content/uploads/2015/12/make-an-appointment.jpg')"}}}  >
              <Box  sx={{ display:"flex",justifyContent:"flex-end" , pt:10, pb:-20 }}>
                 <Link to="/" style={{ position:"relative",textDecoration:"none",}} >
                 <LogoutOutlinedIcon  fontSize='large' color='warning' />
@@ -147,8 +148,8 @@ const index = () => {
 </div>
             {/* ---------------------------------for Mobile------------------------------------------------ */}
  <div>
-          <Stack component="a" sx={{ width:"100%", height:"100%",backgroundColor:"grey.900", justifyContent:"center", display:{xs:"grid", md:"none", backgroundImage:"url('http://pinnacleeyecenter.com/wp-content/uploads/2015/12/make-an-appointment.jpg')"}}}  >
-             <Box  sx={{ display:"flex",justifyContent:"right" , pt:10, pb:-20, pr:5, pl:"20px" }}>
+          <Stack  sx={{ width:"100%", height:"100%", backgroundColor:"grey.900", justifyContent:"center", display:{xs:"grid", md:"none", backgroundImage:"url('http://pinnacleeyecenter.com/wp-content/uploads/2015/12/make-an-appointment.jpg')"}}}  >
+             <Box  sx={{ display:"flex",justifyContent:"right" , pt:10, pb:-20, pr:2, pl:"20px" }}>
                 <Link to="/" style={{ position:"relative",textDecoration:"none",}} >
                 <LogoutOutlinedIcon  fontSize='medium' color='warning' />
                 </Link >
@@ -160,11 +161,11 @@ const index = () => {
                      Our Services 
                  </Typography>
                  
-                 <Divider orientation="horizontal" color ="azure"  width ="80%" sx={{ alignItems:"center" , marginLeft:"5%", mt:"10px" }} />
+                 <Divider orientation="horizontal" color ="azure"  width ="100%" sx={{ alignItems:"center" , marginLeft:"0%", mt:"10px" }} />
                  
             </div>                 
             
-            <Container maxWidth="xs" >
+            <Container maxWidth="md" >
             {/* <Divider variant="inset" orientation="horizontal" color ="gold"  width ="150px" sx={{ alignItems:"center" , marginLeft:"43%" }} /> */}
 
             <Grid container spacing={2} pt={5} pb={10} >
@@ -173,12 +174,14 @@ const index = () => {
        
                  <Grid item xs={6}  pr="5px" >
                  <Link display="grid" to={card.link} style={{ textDecoration:"none" }} >
+                 <AnimationOnScroll animateIn='animate__zoomIn' >
                  <Card  sx={{  width:"100%", height:"100%", boxShadow :"1px 1px 3px gray" , justifyContent:"stretch" }}>
     
                 <CardMedia 
                     color='grey.300'
                      component="img"
-                     height="100"
+                     height="100px"
+                     width="100px"
                      image= {card.image}
                      alt={card.id}
                  />
@@ -193,9 +196,10 @@ const index = () => {
                 {card.description}
             </Typography> */}
           </CardContent>
-        
+          
         
       </Card>
+      </AnimationOnScroll>
       </Link>
     </Grid>
     ) ) } 

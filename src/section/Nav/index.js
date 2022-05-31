@@ -4,6 +4,8 @@ import NavLogo from "../../Pages/Components/navLogo.svg";
 import MenuIcon from '@mui/icons-material/Menu';
 import { Box } from '@mui/system';
 import { Link } from 'react-router-dom';
+import Label from '../../Pages/Components/Label';
+// import MenuPopover from '../../Pages/Components/MenuPopover';
 // import Services from "../Services";
 
 const pages = [ 
@@ -43,7 +45,7 @@ const NavBar = () => {
         <Container maxWidth="x1">
         <Toolbar disableGutters   >
         <img src={NavLogo}   alt="logo" style={{ display: { xs: 'none', md: 'flex' }, marginRight: 10  }} />
-        {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color:"warning.main" }} /> */}
+ 
         <Typography
             variant="h5"
             noWrap
@@ -84,7 +86,7 @@ const NavBar = () => {
 
             Available
           </Typography>
-          <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' }}}>
            <IconButton
               size="large"
               aria-label="account of current user"
@@ -96,6 +98,7 @@ const NavBar = () => {
               <MenuIcon />
             </IconButton>
             <Menu
+              
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -110,12 +113,20 @@ const NavBar = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: 'block', md: 'none' }
+                
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Link textAlign="center" to={page} >{page}</Link>
+                
+                <MenuItem key={page} onClick={handleCloseNavMenu}  >
+                 
+                  <Link textAlign="center" to={page} style={{ textDecoration:"none", color:"warning.main" }}  > 
+                  <Label  >
+                     {page}
+                  </Label>
+                  </Link>
+                  
                 </MenuItem>
               ))}
             </Menu>

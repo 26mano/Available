@@ -9,6 +9,7 @@ const index = () => {
              <div  style={{ width:"100%", height:"100%", borderRadius:"0% 0% 0% 20% "}} >
         <Grid  >
 {/* --------------------------------For Mobile--------------------------------------------------- */}
+<AnimationOnScroll animateOnce={false} animateIn="animate__slideInUp" >
         <Box sx={{ display:{xs:"flex" , md:"none", lg:"none"},  justifyContent:"center", textAlign:"center", backgroundImage:" url('https://i.pinimg.com/originals/74/43/a3/7443a31b6a19e5630b94a6538ff9bdd1.gif') ", pb:4 }} >
                     <Box  sx={{ justifyContent:"center",  }} >
                      <Typography 
@@ -29,7 +30,7 @@ const index = () => {
                      </Typography>
                      </Box>
          </Box>
-
+         </AnimationOnScroll>
 {/* ----------------------------------For Desktop--------------------------------------------------- */}
          <Box  sx={{ height:"100%", display:{xs:" none" , md:"flex", lg:"flex"},  justifyContent:"center", textAlign:"center", padding:"10px 0px 10px 0px"  }} >
                      
