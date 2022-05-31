@@ -8,7 +8,12 @@ import ProjectLogo from './projectlogo.svg';
 import why from './whyproject.svg';
 import Benefit from './projectbenefit.svg';
 import Helmet from 'react-helmet';
-import AnimatedBg from "react-animated-bg";
+import Footer from '../../../Footer';
+import { Link } from 'react-router-dom';
+import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
+
+
+
 
 const ProjectService = () => {
 
@@ -72,28 +77,24 @@ const ProjectService = () => {
             </ Helmet>
             
             <div  >
-            <AnimatedBg
-            colors={["#fe8808", "#db1e5f", "#0f0f17", "#71e0d1"]}
-            duration={1.5}
-            delay={0}
-            timingFunction="ease-out"
-            className="animated-section"
-             >
-                    <div className="App">
-          <h1>Example 1</h1>
-          <h3>- duration: 1.5s</h3>
-          <h3>- delay: 0</h3>
-          <h3>- transition type: ease-out</h3>
-        </div>
-             </AnimatedBg>
-                <Stack sx={{ display:{xs:"none", md:"flex"},  }} >
-            <Grid container maxWidth="lg" spacing={2} sx={{ width:"100%", height:"100%", justifyContent:"center", alignItems:"center" }} >
-                    <Grid item lg={6}  >
+      
+ <Stack component="div" sx={{ width:"100%",display:{xs:"none", md:"flex"}, background: "linear-gradient(180deg, rgb(17, 192, 204) 6.77%,rgb(10, 230, 145) 80%,rgb(5, 143, 113) 100%)" }} >
+      
+        <Container >
+            
+        <Box  sx={{ display:"flex",justifyContent:"flex-end" , pt:10,pr:10 , mb:-15}}>
+                <Link to="/" style={{ position:"relative",textDecoration:"none",}} >
+                <LogoutOutlinedIcon  fontSize='large' color='warning' />
+                </Link >
+            
+             </Box>
+        <Grid container maxWidth="lg" spacing={1} sx={{ width:"100%", height:"100vh", justifyContent:"center", alignItems:"center" }} >
+                    <Grid item lg={7}  >
                         <Box   >
-                        <Typography variant='h2' gutterBottom fontFamily="Rye" textAlign="left" >
+                        <Typography variant='h1' gutterBottom fontFamily="Rye" textAlign="left" >
                         Project Box
                       </Typography>
-                      <Typography variant="subtitle2"   gutterBottom textAlign="left" fontFamily="sans-serif" > 
+                      <Typography variant="subtitle1"   gutterBottom textAlign="left" fontFamily="sans-serif" > 
                       A good job description starts with an attention-grabbing summary of the position and its role within your company. Your summary should provide an overview of your company and expectations for the position. Outline the types of activities and responsibilities required for the job so job seekers can determine if they are qualified, or if the job is suitable for them.
                       </Typography>
 
@@ -103,13 +104,15 @@ const ProjectService = () => {
                         </Box>
                     </Grid>
 
-                    <Grid item lg={6}  >
-                        <Box  >
-                        <img src={ProjectLogo} alt='Project-box' style={{ width:"100%" }} />
+                    <Grid item lg={5}  >
+                        <Box  sx={{ justifyContent:"center" }} >
+                        <img src={ProjectLogo} alt='Project-box' style={{ width:"80%", height:"80%" }} />
                         </Box>
                     </Grid>
 
-                </Grid>
+            </Grid>
+        </Container>
+        
                 
                 <Container maxWidth="lg" className="container"  >
                     <Box  padding="50px" >
@@ -224,17 +227,7 @@ const ProjectService = () => {
                     </Box>
                 </Container>
                 <br /> <br />
-                <Box display="block" textAlign="center" sx={{ bgcolor:"dimgray" , width:"100vw" , height:"89px" }} >
-                 <Typography variant='h5' fontFamily="serif" >
-                     For More Information
-                 </Typography>
-                 <Typography variant="subtitle1" >
-                     Call Us : +91 94442 08901 & +91 88381 42624
-                 </Typography>
-                 <Typography variant="subtitle1" >
-                     Mail to : projectbox2k22@gmail.com
-                 </Typography>
-                </Box>
+             <Footer />
                 </Stack>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import { Button, Card, CardContent, CardMedia, Container, Grid, Typography } from '@mui/material';
+import { Button, Card, CardContent, CardMedia, Container, Grid, Stack, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import "../Service.css";
@@ -7,6 +7,10 @@ import HDLogo from "./HDlogo.svg";
 import Benefit from "./hdbenefit.svg";
 import why from "./whyHD.svg";
 import Helmet from 'react-helmet';
+import { Link } from 'react-router-dom';
+import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
+import Footer from '../../../Footer';
+
 
 const HDService = () => {
 
@@ -78,30 +82,39 @@ const HDService = () => {
                      <meta name='description' content='Civil construction is the art of building bridges, dams, roads, airports, canals, and buildings. Civil engineering is the oldest disciplines of engineering.' />
                      {/* <meta name='keywords' content='Interior Work , Exterior work , Civil Work, Renovation work, False ceiling work  and all type of civil service we do' /> */}
             </Helmet>
-              <div className='horizon-head'>
-            <Grid container maxWidth="lg" spacing={4} >
+              <Stack component="div" sx={{ width:"100%",display:{xs:"none", md:"flex"}, background: "linear-gradient(180deg,   rgb(128, 95, 7)6.77%,rgb(102, 95, 5) 80%,rgb(92, 44, 5) 100%)" }} >
+            < Container >
+                  <Box  sx={{ display:"flex", justifyContent:"flex-end" , pt:10,pr:10 , mb:-15}}>
+                <Link to="/" style={{ position:"relative",textDecoration:"none",}} >
+                <LogoutOutlinedIcon  fontSize='large' color='warning' />
+                </Link >
+            
+             </Box>
+                  
+            <Grid container maxWidth="lg" spacing={4}  sx={{ width:"100%", height:"100vh", justifyContent:"center", alignItems:"center" }}  >
                     <Grid item lg={7} >
-                        <Box className="left-head"  >
-                        <Typography variant='h2' gutterBottom fontFamily="Rye" textAlign="left" >
+                        <Box   >
+                        <Typography variant='h2' color="grey.300" gutterBottom fontFamily="Rye" textAlign="left" >
                         D<span style={{color:"Black", fontFamily:"Rye"}} >&</span>D Horizons
                       </Typography>
-                      <Typography variant="subtitle2" paddingLeft="20px"  gutterBottom textAlign="left" fontFamily="sans-serif" > 
+                      <Typography variant="subtitle2" color="grey.400"  gutterBottom textAlign="left" fontFamily="sans-serif" > 
                       A good job description starts with an attention-grabbing summary of the position and its role within your company. Your summary should provide an overview of your company and expectations for the position. Outline the types of activities and responsibilities required for the job so job seekers can determine if they are qualified, or if the job is suitable for them.
                       </Typography>
-                      <Button variant="outlined" sx={{ color:"azure", marginLeft:"-70%",marginTop:"40px" , padding:"10px", border:"2px solid white" , justifyContent:"space-around" }} href="tel:+919444208901" >
+                      <Button variant="outlined" sx={{ color:"azure", border:"2px solid white"  }} href="tel:+919444208901" >
                       <CallIcon style={{ paddingRight:"10px" }} /> <span  > Call Us  </span>  
                       </Button>
                         </Box>
                     </Grid>
 
                     <Grid item lg={5} >
-                    <Box className="right-head"  >
+                    <Box   >
                         {/* <img src={Cloud} alt='Project-box' style={{ width:"600px", height:"600px" , }} /> */}
-                        <img src={HDLogo} alt='HD-Logo' style={{ width:"600px", height:"600px" , }} />
+                        <img src={HDLogo} alt='HD-Logo' style={{ width:"100%" }} />
                         </Box>
                     </Grid>
 
                 </Grid>
+                </Container>
                 <br />
                 <br /> <br /> <br /> <br />
                 <Container maxWidth="lg" className="container"  >
@@ -217,18 +230,9 @@ const HDService = () => {
                     </Box>
                 </Container>
                 <br /> <br />
-                <Box display="block" textAlign="center" sx={{ bgcolor:"dimgray" , width:"100vw" , height:"89px" }} >
-                 <Typography variant='h5' fontFamily="serif" >
-                     For More Information
-                 </Typography>
-                 <Typography variant="subtitle1" >
-                     Call Us : +91 94442 08901 & +91 88381 42624
-                 </Typography>
-                 <Typography variant="subtitle1" >
-                     Mail to : hdhorizons2k22@gmail.com
-                 </Typography>
-                </Box>
-            </div>
+                <Footer />
+                
+            </Stack>
         </div>
     );
 };

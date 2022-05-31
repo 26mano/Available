@@ -8,7 +8,7 @@ import Blog from './section/Blog/Blog';
 import Home from './section/Home';
 import Services from './section/Services';
 import Contact from './section/Contact';
-// import ProjectService from './section/Services/Pages/ProjectBox/ProjectService';
+import ProjectService from './section/Services/Pages/ProjectBox/ProjectService';
 import CivilServices from './section/Services/Pages/Civil/CivilService';
 import Dance from './section/Services/Pages/Dance/Dance';
 import Horizon from './section/Services/Pages/D&D/HDService';
@@ -28,7 +28,7 @@ function App() {
       <Route path="/Log-Out" element={<Home />} /> 
       <Route path="/Blog" element={<Blog />} /> 
       {/* <Route path="/CreativeDesign" element={ <Home /> } />  */}
-      {/* <Route path='/ProjectBox' element={<ProjectService />} /> */}
+      <Route path='/ProjectBox' element={<ProjectService />} />
       <Route path='/CreativeDesign' element={<CivilServices /> } />
       <Route path='/The_Dance_Entity' element={<Dance /> } />
       <Route path='/Uv_Visual_Studio' element={<Editing /> } />
