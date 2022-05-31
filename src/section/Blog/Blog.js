@@ -12,21 +12,23 @@ function Blog(props) {
         <div>
             {/* -------------------------------------for Desktop------------------------------------------------------------------ */}
      <Stack style={{ width:"100%",height:"100%",display:{xs:"none", md:"flex"} , backgroundImage:"url('https://wallpaperaccess.com/full/1526048.jpg')"}} >
+          
             <Helmet >
                 <title> About Us | Available</title>
                 <meta name='description' content='Available' />
             </Helmet>
-          
-            <Box  sx={{ display:{md:"flex", xs:"none"} ,justifyContent:"flex-end" ,  pt:10, pb:-20 , pr:10}}>
+
+
+            <Box  sx={{ display:{ md:"flex", xs:"none" } ,justifyContent:"flex-end" ,  pt:10, pb:-20 , pr:10}}>
                 <Link to="/" style={{ position:"relative", textDecoration:"none",}} >
                 <LogoutOutlinedIcon  fontSize='large' color='warning' />
                 </Link >
-            
              </Box>
-          
+
+
              <div style={{ width:"100%" }}  >
                
-                 <Typography variant='h3' ml={5}  mt={-5} color="warning.main" fontFamily= 'Josefin Sans' >
+                 <Typography variant='h3' ml={5}  mt={-5} color="warning.main" fontFamily= 'Josefin Sans' sx={{ display:{xs:"none", md:"flex"} }} >
                      About Us
                  </Typography>
                  
