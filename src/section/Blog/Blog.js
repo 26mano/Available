@@ -11,7 +11,7 @@ function Blog(props) {
     return (
         <div>
             {/* -------------------------------------for Desktop------------------------------------------------------------------ */}
-     <Stack style={{ width:"100%",height:"100%",display:{xs:"none", md:"flex"} , backgroundImage:"url('http://cdn30.us1.fansshare.com/image/backgroundimage/website-background-background-image-676415485.jpg')"}} >
+     <Stack style={{ width:"100%",height:"100%",display:{xs:"none", md:"flex"} , backgroundImage:"url('https://wallpaperaccess.com/full/1526048.jpg')"}} >
             <Helmet >
                 <title> About Us | Available</title>
                 <meta name='description' content='Available' />
@@ -61,7 +61,7 @@ function Blog(props) {
          
         </Stack>
         {/* -----------------------------------for Mobile-------------------------------------------------------------- */}
-     <Stack style={{ width:"100%", height:"100%",display:{ xs:"flex", md:"none" } , backgroundImage:"url('http://cdn30.us1.fansshare.com/image/backgroundimage/website-background-background-image-676415485.jpg')"}} >
+     <Stack style={{ width:"100%", height:"100%",display:{ xs:"flex", md:"none" } , backgroundImage:"url('https://wallpaperaccess.com/full/1526048.jpg')"}} >
             
             <Helmet >
                 <title> About Us | Available</title>
