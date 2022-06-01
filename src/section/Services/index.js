@@ -1,16 +1,22 @@
-import {  Card, CardContent, CardMedia, Container,  Divider,  Grid, Stack, Typography } from '@mui/material';
-// import { Box } from '@mui/system';
 import React from 'react';
-// import Zoom from '@mui/material/Zoom'
 import "../../App.css";
+// ---Mui Libary
+import {  Card, CardContent, CardMedia, Container,  Divider,  Grid, Stack, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
-import Footer from "../Footer";
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import { Box } from '@mui/system';
+// Animation
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+// Helmet
 import Helmet from 'react-helmet';
+// Page
+import Footer from "../Footer";
+import { IconButtonAnimate } from '../../Pages/Components/animate';
+import { Icon } from '@iconify/react';
+
 
 const index = () => {
+    
     const content = [
         {   
             
@@ -98,10 +104,13 @@ const index = () => {
             </Helmet>
         <Stack component="animate" sx={{ width:"100%", height:"100%",backgroundColor:"grey.900", justifyContent:"center", display:{xs:"none", md:"grid", backgroundImage:"url('http://pinnacleeyecenter.com/wp-content/uploads/2015/12/make-an-appointment.jpg')"}}}  >
              <Box  sx={{ display:"flex",justifyContent:"flex-end" , pt:10, pb:-20 }}>
+            <IconButtonAnimate>
+                <Icon>
                 <Link to="/" style={{ position:"relative",textDecoration:"none",}} >
                 <LogoutOutlinedIcon  fontSize='large' color='warning' />
                 </Link >
-            
+                </Icon>
+                </IconButtonAnimate>
              </Box>
           
              <div style={{ width:"100%"  }}  >
@@ -164,9 +173,13 @@ const index = () => {
  <div>
           <Stack  sx={{ width:"100%", height:"100%", backgroundColor:"grey.900", justifyContent:"center", display:{xs:"grid", md:"none", backgroundImage:"url('http://pinnacleeyecenter.com/wp-content/uploads/2015/12/make-an-appointment.jpg')"}}}  >
              <Box  sx={{ display:"flex",justifyContent:"right" , pt:10, pb:-20, pr:2, pl:"20px" }}>
+             <IconButtonAnimate>
+                <Icon>
                 <Link to="/" style={{ position:"relative",textDecoration:"none",}} >
                 <LogoutOutlinedIcon  fontSize='medium' color='warning' />
                 </Link >
+                </Icon>
+                </IconButtonAnimate>
             
              </Box>
           

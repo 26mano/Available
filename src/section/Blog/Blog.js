@@ -1,11 +1,18 @@
-import { Box, Container, Divider, Grid, Stack, Typography } from '@mui/material';
 import React from 'react';
-import Helmet from 'react-helmet';
-import { Link } from 'react-router-dom';
-import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
+
+// local
 import Clip from './aboutus.svg';
 import Footer from '../Footer';
+// @helmat
+import Helmet from 'react-helmet';
+// @mui
+import { Box, Container, Divider, Grid, Stack, Typography } from '@mui/material';
+import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
+// @animate
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+// @router-dom
+import { Link } from 'react-router-dom';
+
 
 function Blog(props) {
     return (
@@ -38,7 +45,7 @@ function Blog(props) {
             <Container  >
             <Grid container maxWidth="xlg" spacing={2} sx={{ width:"100%" ,display:{xs:"none" , md:"flex" } , justifyContent:"flex-end" ,pb:10 }} >
                 <Grid item lg={7} mt={5}  >
-                <AnimationOnScroll animateIn='animate__fadeInLeft'>
+                <AnimationOnScroll animateIn='animate__fadeInLeft'  >
                    <Box sx={{width:"100%" }}>
                    <Typography variant="h6" textAlign="justify" color="grey.300" >
                    You should now have a decent idea of what an About Us page should and shouldn’t contain.We’re going to follow this with a few tips to help youstand out and create an About Us page that works foryou and your business. Be creative. Don’t fall into the trap of simply writing a brief summary of your business and calling it a day.The best About Us pages are creative, informative, and interesting. Don’t follow the crowd. If someone’s reading your About page, there’s a good chance they’ve been reading (or will read) your competitors’ conversions
@@ -89,7 +96,7 @@ function Blog(props) {
             <Container  >
             <Grid container maxWidth="xlg" spacing={2} sx={{ width:"100%" ,display:{xs:"flex" , md:"none" } , justifyContent:"flex-end" ,pb:10 }} >
                 <Grid item lg={12} mt={5}  >
-                   
+              
                    <Box sx={{width:"100%" }}>
                    <Typography variant="inherit" textAlign="justify" color="grey.300" gutterBottom>
                    You should now have a decent idea of what an About Us page should and shouldn’t contain.We’re going to follow this with a few tips to help youstand out and create an About Us page that works foryou and your business. Be creative. Don’t fall into the trap of simply writing a brief summary of your business and calling it a day.The best About Us pages are creative, informative, and interesting. Don’t follow the crowd. If someone’s reading your About page, there’s a good chance they’ve been reading (or will read) your competitors’ conversions
@@ -99,6 +106,7 @@ function Blog(props) {
                    You should now have a decent idea of what an About Us page should and shouldn’t contain.We’re going to follow this with a few tips to help youstand out and create an About Us page that works foryou and your business. Be creative. Don’t fall into the trap of simply writing a brief summary of your business and calling it a day.The best About Us pages are creative, informative, and interesting. Don’t follow the crowd. If someone’s reading your About page, there’s a good chance they’ve been reading (or will read) your competitors’ conversions
                    </Typography>
                    </Box>
+                  
                 </Grid>
 
                

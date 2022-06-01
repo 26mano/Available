@@ -23,8 +23,7 @@ const index = () => {
             delay : 0.3
         },
         {
-            title: "Classy Construction",
-            description: "hgjhgkjgk;gh;igjhgvs",
+            title: "Creative Designs",
             image :"https://thumbs.dreamstime.com/b/innovative-architecture-civil-engineering-plan-building-construction-project-creative-graphic-design-showing-concept-174256642.jpg",
             id : 1,
             link : "/classyconstruction",
@@ -32,7 +31,7 @@ const index = () => {
             delay : 0.7
         },
         {
-            title: "H&D Horizon",
+            title: "D&D Horizon",
             description: "hgjhgkjgk;gh;igjhgvs",
             image:"https://www.galaxyeduworld.com/storage/blogs/1602683459_5f870243cc6a9_750_351.jpg",
             id : 2,

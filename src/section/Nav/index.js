@@ -1,6 +1,6 @@
 import { AppBar, Button, Container, IconButton,  Menu, MenuItem, Toolbar,  Typography } from '@mui/material';
 import React from 'react';
-import NavLogo from "../../Pages/Components/navLogo.svg";
+import NavLogo from "./navLogo.svg";
 import MenuIcon from '@mui/icons-material/Menu';
 import { Box } from '@mui/system';
 import { Link } from 'react-router-dom';

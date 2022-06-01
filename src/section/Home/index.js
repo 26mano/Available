@@ -38,7 +38,7 @@ const Home = () => {
                  <Box sx={{height:"100vh", display:{xs:"none" , md:"flex", lg:"flex"}, alignItems:"center", justifyContent:"center", textAlign:"center" }} >
                     <Box>
                     <AnimationOnScroll animateIn="animate__flipInX">
-                      {/* animate__flipInX */}
+                     
                      <Typography 
                      variant='h1' 
                     //  gutterBottom
