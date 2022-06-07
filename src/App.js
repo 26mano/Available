@@ -15,6 +15,8 @@ import Horizon from './section/Services/Pages/D&D/HDService';
 import Editing from './section/Services/Pages/Editing/Editing';
 import Menporul from './section/Services/Pages/MagicMenporul/Menporul';
 import Insuvai from './section/Services/Pages/Catering/Insuvai';
+import Login from './section/login/Login';
+import Register from './section/login/Register/Register';
 // import LoadingScreen from './Pages/Components/LoadingScreen';
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
       <Route path="/Services" element={<Services />} /> 
       <Route path="/Contact" element={<Contact />} /> 
       <Route path="/Blog" element={<Blog />} /> 
+      <Route path="/Login" element={<Login />} /> 
+      <Route path="/Register" element={<Register />} /> 
 {/* --------------------------------------------------------------- */}
       <Route path='/ProjectBox' element={<ProjectService />} />
       <Route path='/CreativeDesign' element={<CivilServices /> } />

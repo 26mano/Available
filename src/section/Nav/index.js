@@ -12,6 +12,7 @@ const pages = [
   'Services' , 
   'Blog', 
   'Contact',
+  'Login'
 ];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -124,9 +125,18 @@ const NavBar = () => {
                   <Link textAlign="center" to={page} style={{ textDecoration:"none", color:"warning.main" }}  > 
                   <Label  >
                      {page}
+                    
                   </Label>
                   </Link>
-                  
+                  {/* <Link to="/Login" >
+                    <Label >
+                    <Button >
+                      Log In
+                    </Button>
+                    </Label>
+                   
+                  </Link> */}
+
                 </MenuItem>
               ))}
             </Menu>
